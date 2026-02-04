@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Chakila</title>
+  <link rel="icon" type="image/png" href="21.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +23,9 @@
 <section class="contact">
   <h2>Get in Touch</h2>
   <p>If you want to work together, discuss a project, or just say hi, send me a message!</p>
-  <form class="contact-form" action="send_mail.php" method="POST">
+ 
+    <form class="contact-form" action="send_mail.php" method="POST">
+
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -53,4 +56,5 @@ const showSections = () => {
 
 window.addEventListener('scroll', showSections);
 window.addEventListener('load', showSections);
+
 </script>
